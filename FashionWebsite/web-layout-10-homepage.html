@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+  <meta charset="utf-8">
+  <title>Homepage</title>
+  <link href="Stylesheets/web-layout-10-global-stylesheet.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+
+  /* These styles below are used to style the <main> section of the homepage, on this website */
+
+
+  body{
+
+    background-image: url(Images/about-background.jpg);
+    background-size: 100% 448px;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+
+    /*background-color: #a6a6a6;*/
+
+  }
+
+  #top-section{
+
+    /*background-color: red;*/
+    height: 350px;
+
+    position: relative;
+
+  }
+
+  #webpage-title{
+
+    font-size: 50px;
+    text-align: center;
+    padding-top: 60px;
+    color:  #d14775;
+
+  }
+
+
+  #top-section > button{
+
+    background-color: black;
+    font-size: 20px;
+
+    border-style: none;
+    padding: 5px;
+    display: block;/*button is an inline element*/
+    margin: auto;
+    width: 40%;
+    height: 50px;
+    color: white;
+
+    border-radius: 10px;
+
+
+  }
+
+  #top-section > button:hover{
+
+    background-color:	#db7094;
+    color: white;
+
+  }
+
+  /*.slider-circles{
+
+    background-color: blue;
+    border: 2px solid black;
+    height: 20px;
+
+
+  }*/
+
+
+
+  #section-2{
+
+    background-image: linear-gradient(to bottom right, #a32952, #cc3366);
+    /*background-color:  #a32952;*/
+    /*border: 2px solid black;*/
+
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+  }
+
+  #section-2-flex-parent{
+
+    /*background-color: green;*/
+
+  }
+
+  .section-2-div{/*section 2 flex item divs*/
+
+    /*background-color: grey;
+    border: 2px solid black;*/
+
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 80%;
+
+    padding-bottom: 20px;
+
+    text-align: center;
+
+  }
+
+
+  .section-2-image{
+
+
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    width: 85%;
+    height: 350px;
+
+    /*border: 2px solid black;*/
+    /*border-radius: 10px;*/
+
+  }
+
+  .section-2-div > p{
+
+    /*background-color: lightgreen;*/
+    margin-left: 10%;
+    margin-right: 10%;
+
+    font-size: 20px;
+
+  }
+
+  .section-2-div > button{
+
+    background-color: black;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    color: white;
+
+    border-radius: 7px;
+
+  }
+
+  .section-2-div > button:hover{
+
+  background-color: #e085a3;
+  color: white;
+
+  }
+
+  #section-3{
+
+    /*background: rgba(255, 192, 203, 0.7);*/
+
+    /*border: 3px solid blue;*/
+    padding-top: 70px;
+    padding-bottom: 50px;
+
+  }
+
+  .section-3-flex-item{
+
+    /*background-color: pink;
+    border: 2px solid black;*/
+  }
+
+  .section-3-flex-item:nth-child(1){
+
+    margin-bottom: 50px;
+
+  }
+
+  .section-3-flex-item:nth-child(2){
+
+    margin-top: 70px;
+
+
+  }
+
+  .service-benefit-image{
+
+    display: block;
+    margin: auto;
+    width: 70%;
+    height: 350px;
+
+  }
+
+  .service-benefit-div{
+
+    /*border: 2px solid red;*/
+    text-align: center;
+
+  }
+
+  .service-benefit-div > p {
+
+    /*background-color: white;*/
+    padding-left: 20%;
+    padding-right: 20%;
+
+    font-size: 20px;
+
+  }
+
+  @media screen and (min-width: 340px){
+
+    #top-section > button, .section-2-div > button{
+
+      font-size: 25px;
+
+
+    }
+
+  }
+
+  @media screen and (min-width: 770px){
+
+    body{
+
+      background-size: 100% 580px;
+
+    }
+
+    #top-section{
+
+      height: 450px;
+
+    }
+
+    #webpage-title{
+
+        font-size: 63px;
+        padding-top: 90px;
+
+    }
+
+    #section-2-flex-parent{
+
+      /*background-color: lightgreen;
+      border: 2px solid black;*/
+
+      margin: auto;
+      width: 90%;
+
+      display: flex;
+
+      justify-content: center;
+
+    }
+
+    .section-2-div{
+
+      /*background-color: grey;
+      border: 2px solid black;*/
+
+      margin: 0;
+      flex-basis: 320px;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    .section-2-image{
+
+      height: 300px;
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+
+    }
+
+    .section-2-div > p{
+
+      font-size: 18px;
+
+    }
+
+    #section-3{
+
+      padding-top: 100px;
+      padding-bottom: 90px;
+
+      margin: auto;
+      width: 90%;
+
+    }
+
+
+    .section-3-flex-item{
+
+      /*background-color: pink;
+      border: 2px solid black;*/
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    .service-benefit-image{
+
+      margin: 0;
+      width: 0;
+      flex-basis: 40%;
+      height: 350px;
+
+      box-shadow: 30px 30px #d65c85;
+
+    }
+
+    .service-benefit-div{
+
+      /*background-color: green;
+      border: 2px solid blue;*/
+      flex-basis: 50%;
+
+
+    }
+
+    .service-benefit-div > p{
+
+      font-size: 18px;
+      padding-left: 10%;
+      padding-right: 10%;
+
+    }
+
+
+  }
+
+  @media screen and (min-width: 1075px){/*media query to change section 3's layout at width 1075px*/
+
+    .section-3-flex-item{
+
+      margin: auto;
+      width: 85%;
+
+    }
+
+  }
+
+
+  @media screen and (min-width: 1200px){/*Media query for the main content to change appropriately */
+
+    body{
+
+      background-size: 100% 710px;
+
+    }
+
+
+    #top-section{
+
+      /*background-color: red;*/
+      height: 570px;
+
+    }
+
+    #webpage-title{
+
+      font-size: 80px;
+      padding-top: 110px;
+
+    }
+
+    #top-section > button{
+
+      width: 360px;
+
+      position: relative;
+      bottom: 25px;
+
+    }
+
+    #section-2-flex-parent{
+
+      width: 80%;
+
+    }
+
+
+    .section-2-div{
+
+      margin-left: 30px;
+      margin-right: 30px;
+
+      flex-grow: 1;
+
+    }
+
+
+
+    #section-3{
+
+      padding-bottom: 150px;
+
+    }
+
+  }/* end of media query */
+
+
+  </style>
+
+</head>
+<body>
+
+  <header><!-- this is the header for the mobile view -->
+
+    <button id="hamburger-menu"> <img src="Icons/hamburger-icon.svg" alt=""> </button>
+
+    <nav id="navigation-bar"><!-- will be display:flex; -->
+
+      <ul id="navigation-menu">
+        <li> <a href="#">Home</a> </li>
+        <li> <a href="web-layout-10-about-page.html">About</a> </li>
+        <li> <a href="web-layout-10-contact-page.html">Contact</a> </li>
+      </ul>
+
+    </nav><!-- end of navigation -->
+
+  </header>
+
+  <main>
+
+    <section id="top-section">
+
+      <h1 id="webpage-title">Welcome</h1>
+      <button type="button">Click Here</button>
+      <span class="slider-circles"></span>
+      <span class="slider-circles"></span>
+
+    </section><!-- end of section 1 -->
+
+    <section id="section-2">
+
+
+      <div id="section-2-flex-parent"><!-- will be display: flex -->
+
+      <div class="section-2-div"><!-- turns into a flex item -->
+        <img class="section-2-image" src="Images/placeholder-image.jpg" alt="">
+        <h2>Feature 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <button type="button">Click Me</button>
+      </div>
+
+      <div class="section-2-div"><!-- turns into a flex item -->
+        <img class="section-2-image" src="Images/placeholder-image.jpg" alt="">
+        <h2>Feature 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <button type="button">Click Me</button>
+      </div>
+
+      <div class="section-2-div"><!-- turns into a flex item -->
+        <img class="section-2-image" src="Images/placeholder-image.jpg" alt="">
+        <h2>Feature 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <button type="button">Click Me</button>
+      </div>
+
+      </div>
+
+    </section><!-- end of section 2 -->
+
+    <section id="section-3"><!-- will display flex -->
+
+      <div class="section-3-flex-item"><!-- these flex items will turn into flex containers themselves -->
+
+        <img class="service-benefit-image" src="Images/placeholder-image.jpg" alt="">
+
+        <div class="service-benefit-div"><!-- the service benefit div encompasses the service Benefit
+          heading and the description paragraph associated with it -->
+          <h2>Service Benefit 1</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div><!-- end service benefit div -->
+
+      </div><!-- end section 3 flex item -->
+
+
+
+      <div class="section-3-flex-item"><!-- these flex items will turn into flex containers themselves -->
+
+        <img class="service-benefit-image" src="Images/placeholder-image.jpg" alt="">
+
+        <div class="service-benefit-div"><!-- the service benefit div encompasses the service Benefit
+          heading and the description paragraph associated with it -->
+          <h2>Service Benefit 1</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div><!-- end service benefit div -->
+
+      </div><!-- end section 3 flex item -->
+
+
+    </section><!-- end of section 3 -->
+
+  </main><!-- end of main -->
+
+
+  <footer>
+
+    <div id="footer-flex-parent"><!-- will have display: flex; -->
+
+      <div id="about-footer-menu" class="footer-content-div"><!-- will be turned into a flex item -->
+
+        <h2>About</h2>
+        <ul>
+          <li> <a href="web-layout-10-about-page.html">About Site</a> </li>
+          <li>Sub links</li>
+        </ul><!-- end of ul -->
+
+      </div><!-- end of div -->
+
+      <div id="contact-footer-menu" class="footer-content-div"><!-- will be turned into a flex item -->
+
+        <h2>Contact</h2>
+        <ul>
+          <li> <a href="web-layout-10-contact-page.html">Contact Us</a> </li>
+        </ul><!-- end of ul -->
+
+      </div><!-- end of div -->
+
+
+      <div id="other-footer-content" class="footer-content-div"><!-- will be turned into a flex item -->
+
+
+        <p>FOLLOW US ON SOCIAL MEDIA!</p>
+
+        <a href="#"> <img class="social-media-icon" src="Icons/facebook-icon.svg" alt="Facebook page"> </a>
+        <a href="#"> <img class="social-media-icon" src="Icons/twitter-icon.svg" alt="Twitter page"> </a>
+        <a href="#"> <img class="social-media-icon" src="Icons/instagram-icon.svg" alt="Instagram page"> </a>
+        <a href="#"> <img class="social-media-icon" src="Icons/youtube-icon.svg" alt="YouTube page"> </a>
+        <a href="#"> <img class="social-media-icon" src="Icons/pinterest-icon.svg" alt="Pinterest page"> </a>
+
+      </div><!-- end of div -->
+
+    </div><!-- end of footer flex parent -->
+
+    <p id="copyright-sentence">Copyright &#0169; 2019.</p>
+
+  </footer><!-- end of footer -->
+
+</body>
+</html>

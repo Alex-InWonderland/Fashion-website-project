@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+  <meta charset="utf-8">
+  <title>About Page</title>
+  <link href="Stylesheets/web-layout-10-global-stylesheet.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+
+  /* These styles below are used to style the <main> section of the about page, on this website */
+
+  body{
+
+    background-image: url(Images/about-background.jpg);
+    background-size: 100% 330px;
+    background-repeat: no-repeat;
+
+    /*background-color: red;*/
+
+  }
+
+  #top-section{
+
+    /*background-color: red;*/
+    position: relative;
+
+  }
+
+  #webpage-title{
+
+    font-size: 50px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color:  #d14775;
+
+  }
+
+  #section-2{
+
+    background-image: linear-gradient(to right, #d14775, #cc3366);
+    /*background-color: #d14775;*/
+    padding-top: 25px;
+    padding-bottom: 60px;
+    /*border: 2px solid black;*/
+
+    font-size: 20px;
+
+  }
+
+  #about-summary-title{
+
+    text-align: center;
+    color: white;
+
+    font-size: 40px;
+    /*background-color: red;*/
+    padding-bottom: 10px;
+  }
+
+  #about-summary-title-underline{
+
+    margin: auto;
+    width: 70%;
+
+    border: 2px solid black;
+    position: relative;
+    bottom: 30px;
+
+  }
+
+  .section-2-image{/*mobile version*/
+
+    display: block;
+    margin: auto;
+    width: 70%;
+    height: 350px;
+
+    border: 4px solid black;
+
+  }
+
+   #about-summary{
+
+     color: white;
+    /*background-color: lightgreen;*/
+    margin: auto;
+    width: 70%;
+    margin-top: 40px;
+
+    text-align: justify;
+    font-size: 22px;
+
+  }
+
+  #section-3{
+
+
+    /*border: 2px solid black;*/
+
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+
+
+  }
+
+  .quotation-marks{
+
+    color: #efd9c2;
+    font-weight: bold;
+
+  }
+
+  .client-review{
+
+    /*background-color: lightgreen;*/
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+
+
+  }
+
+  #client-name{
+
+    font-style: italic;
+
+  }
+
+
+  @media screen and (min-width: 770px){
+
+    body{
+
+      background-size: 100% 500px;
+
+    }
+
+
+    #top-section{
+
+      /*background-color: red;*/
+      height: 250px;
+
+    }
+
+
+    #webpage-title{
+
+      font-size: 63px;
+
+    }
+
+    #about-summary-title{
+
+    font-size: 45px;
+
+    }
+
+    #about-summary-title-underline{
+
+      width: 86%;
+
+    }
+
+
+    #section-2-flex-parent{
+
+      display: flex;
+      /*background-color: red;*/
+      justify-content: center;
+
+    }
+
+    .section-2-image{
+
+      /*background-color: lightgreen;
+      border: 2px solid black;*/
+
+      margin: 0;
+      width: 30%;
+
+      border-style: none;
+
+    }
+
+
+    #about-summary{
+
+    /*background-color: lightgreen;
+    border: 2px solid black;*/
+    margin: 0;
+    margin-left: 20px;
+    width: 55%;
+
+    }
+
+
+
+    .client-review{
+
+
+      width: 40%;
+
+    }
+
+  }
+
+  @media screen and (min-width: 1200px){/*Media query for the main content to change appropriately */
+
+    body{
+
+      background-size: 100% 600px;
+
+    }
+
+    #top-section{
+
+      height: 270px;
+
+    }
+
+    #webpage-title{
+
+      font-size: 67px;
+
+    }
+
+
+  }
+
+
+  </style>
+
+</head>
+<body>
+
+  <header><!-- this is the header for the mobile view -->
+    <button id="hamburger-menu"> <img src="Icons/hamburger-icon.svg" alt=""> </button>
+
+    <nav id="navigation-bar"><!-- will be display:flex; -->
+
+      <ul id="navigation-menu">
+        <li> <a href="web-layout-10-homepage.html">Home</a> </li>
+        <li> <a href="#">About</a> </li>
+        <li> <a href="web-layout-10-contact-page.html">Contact</a> </li>
+      </ul>
+
+    </nav><!-- end of navigation -->
+
+  </header>
+
+  <main>
+
+    <section id="top-section">
+
+      <h1 id="webpage-title">About Site</h1>
+
+    </section><!-- end of section 1 -->
+
+    <section id="section-2">
+
+        <h2 id="about-summary-title">ABOUT SUMMARY</h2>
+        <div id="about-summary-title-underline"></div>
+
+      <div id="section-2-flex-parent"><!-- will be turned into a flex container -->
+
+
+          <img class="section-2-image" src="Images/placeholder-image.jpg" alt="">
+
+
+
+          <p id="about-summary">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+
+      </div><!-- end of section 2 flex parent -->
+
+    </section><!-- end of section 2 -->
+
+    <section id="section-3">
+
+      <p class="client-review">
+        <span class="quotation-marks">&quot;</span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        <span class="quotation-marks">&quot;</span> <br><br>
+        - <span id="client-name">Jane Doe</span>
+       </p>
+
+      <span class="slider-circles"></span>
+      <span class="slider-circles"></span>
+      <span class="slider-circles"></span>
+
+    </section><!-- end of section 3 -->
+
+
+  </main><!-- end of main -->
+
+  <footer>
+
+    <div id="footer-flex-parent"><!-- will have display: flex; -->
+
+      <div id="about-footer-menu" class="footer-content-div"><!-- will be turned into a flex item -->
+
+        <h2>About</h2>
+        <ul>
+          <li>About Site</li>
+          <li>Sub links</li>
+        </ul><!-- end of ul -->
+
+      </div><!-- end of div -->
+
+      <div id="contact-footer-menu" class="footer-content-div"><!-- will be turned into a flex item -->
+
+        <h2>Contact</h2>
+        <ul>
+          <li> <a href="web-layout-10-contact-page.html">Contact Us</a> </li>
+        </ul><!-- end of ul -->
+
+      </div><!-- end of div -->
+
+
+      <div id="other-footer-content" class="footer-content-div"><!-- will be turned into a flex item -->
+
+        <p>FOLLOW US ON SOCIAL MEDIA!</p>
+
+        <a href="#"> <img class="social-media-icon" src="Icons/facebook-icon.svg" alt="Facebook page"> </a>
+        <a href="#"> <img class="social-media-icon" src="Icons/twitter-icon.svg" alt="Twitter page"> </a>
+        <a href="#"> <img class="social-media-icon" src="Icons/instagram-icon.svg" alt="Instagram page"> </a>
+        <a href="#"> <img class="social-media-icon" src="Icons/youtube-icon.svg" alt="YouTube page"> </a>
+        <a href="#"> <img class="social-media-icon" src="Icons/pinterest-icon.svg" alt="Pinterest page"> </a>
+
+      </div><!-- end of div -->
+
+    </div><!-- end of footer flex parent -->
+
+    <p id="copyright-sentence">Copyright &#0169; 2019.</p>
+
+  </footer><!-- end of footer -->
+
+</body>
+</html>

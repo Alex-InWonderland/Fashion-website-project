@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+  <meta charset="utf-8">
+  <title>Contact Page</title>
+  <link href="Stylesheets/web-layout-10-global-stylesheet.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+
+  /* These styles below are used to style the <main> section of the contact page, on this website */
+
+
+  body{
+
+    background-image: url(Images/about-background.jpg);
+    background-size: 100% 350px;
+    background-repeat: no-repeat;
+
+  }
+
+  #top-section{
+
+    /*background-color: red;*/
+
+  }
+
+  #webpage-title{
+
+    font-size: 50px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #d14775;
+
+  }
+
+  #section-2{
+
+    background-image: linear-gradient(#d14775, #cc3366);
+    padding-top: 40px;
+    padding-bottom: 60px;
+
+  }
+
+
+  form{
+
+    /*background-color: lightgreen;*/
+
+    margin: auto;
+    width: 90%;
+    padding-bottom: 20px;
+    margin-bottom: 70px;
+
+  }
+
+
+  #form-elements-div{
+
+    /*background-color: purple;*/
+    margin: auto;
+    width: 95%;
+
+  }
+
+  #form-elements-div > p{
+
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+
+    color: white;
+    padding-bottom: 10px;
+
+  }
+
+  .form-element{
+
+
+    border: 4px solid #523414 /*#cc3366*/;
+    display: block;
+    font-size: 16px;
+    color: #cc3366;
+
+  }
+
+  #form-elements-div > input{
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+
+    width: 98%;
+
+  }
+
+  #form-elements-div > input:nth-of-type(1), #form-elements-div > input:nth-of-type(2), textarea{
+
+    margin-bottom: 10px;
+
+  }
+
+  textarea{
+
+    padding-top: 5px;
+    padding-left: 5px;
+    width: 98%;
+    height: 120px;
+    font-family: sans-serif;
+
+  }
+
+  #submit-button{
+
+    width: 100%;
+    background-color: black;
+    border-style: none;
+    color: white;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+
+  }
+
+  #submit-button:hover{
+
+    background-color: #db7094;
+
+    font-weight: bold;
+
+  }
+
+
+  #company-information-div{
+
+    background-color: white;
+    border: 4px solid #523414;
+    color: white;
+    margin: auto;
+    width: 70%;
+
+
+    padding-bottom: 55px;
+    padding-top: 25px;
+
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  #company-information-div > h3{
+
+    font-size: 22px;
+    color: #d65c85;
+
+  }
+
+  #company-information-div > a, #company-information-div > p{
+
+    color: black;
+    font-weight: bold;
+
+  }
+
+  @media screen and (min-width: 770px){
+
+    body{
+
+      background-size: 100% 500px;
+
+    }
+
+    #top-section{
+
+      /*background-color: red;*/
+
+      height: 250px;
+
+    }
+
+    #webpage-title{
+
+      font-size: 63px;
+
+    }
+
+    #section-2{
+
+      display: flex;
+      justify-content: center;
+
+    }
+
+    form{
+
+      margin: 0;
+      width: 0;
+      flex-basis: 55%;
+      position: relative;
+      bottom: 15px;
+
+    }
+
+    #company-information-div{
+
+      margin: 0;
+      width: 0;
+      flex-basis: 30%;
+      order: -1;
+
+      margin-right: 20px;
+
+    }
+
+  }
+
+  @media screen and (min-width: 1200px){
+
+    body{
+
+      background-size: 100% 600px;
+
+    }
+
+
+    #webpage-title{
+
+      font-size: 67px;
+
+    }
+
+    #section-2{
+
+      padding-top: 80px;
+      padding-bottom: 80px;
+
+    }
+
+    form{
+
+      flex-basis: 45%;
+
+    }
+
+    #form-elements-div > input{
+
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+    }
+
+    textarea{
+
+      padding-bottom: 30px;
+
+    }
+
+
+
+    #company-information-div{
+
+      flex-basis: 25%;
+      margin-right: 100px;
+
+
+    }
+
+
+
+  }
+
+
+
+  </style>
+
+</head>
+<body>
+
+  <header>
+
+    <button id="hamburger-menu"> <img src="Icons/hamburger-icon.svg" alt=""> </button>
+
+    <nav id="navigation-bar"><!-- will be display:flex; -->
+
+      <ul id="navigation-menu">
+        <li> <a href="web-layout-10-homepage.html">Home</a> </li>
+        <li> <a href="web-layout-10-about-page.html">About</a> </li>
+        <li> <a href="#">Contact</a> </li>
+      </ul>
+
+    </nav><!-- end of navigation -->
+
+
+  </header>
+
+  <main>
+
+    <section id="top-section">
+
+    <h1 id="webpage-title">Contact Us</h1>
+
+    </section><!-- end of section 1 -->
+
+    <section id="section-2"><!-- This will get display: flex; -->
+
+      <form><!-- This will become a flex item -->
+
+        <div id="form-elements-div"><!-- used to align the form elements and message -->
+          <p>Leave us a message:</p>
+          <input class="form-element" type="text" placeholder="First and Last Name">
+          <input class="form-element" type="Email" placeholder="Email Address">
+          <textarea class="form-element" placeholder="Message"></textarea>
+
+
+          <button id="submit-button" class="form-element" type="submit">SUBMIT</button>
+        </div>
+
+      </form><!-- end of form -->
+
+
+      <div id="company-information-div"><!-- This will become a flex item -->
+
+        <h3>Company Address</h3>
+
+        <p>
+          234 Company Lane<br>
+          19000, MA<br>
+          USA
+        </p>
+
+        <h3>Company Phone</h3>
+
+        <a href="tel:">215.000.0000</a>
+
+        <h3>Company Email</h3>
+
+        <a href="mailto:company@email.com">company@email.com</a>
+
+      </div><!-- end of company information div -->
+
+    </section><!-- end of section 2-->
+
+  </main><!-- end of main -->
+
+  <footer>
+
+    <div id="footer-flex-parent"><!-- will have display: flex; -->
+
+      <div id="about-footer-menu" class="footer-content-div"><!-- will be turned into a flex item -->
+
+        <h2>About</h2>
+        <ul>
+          <li> <a href="web-layout-10-about-page.html">About Site</a> </li>
+          <li>Sub links</li>
+        </ul><!-- end of ul -->
+
+      </div><!-- end of div -->
+
+      <div id="contact-footer-menu" class="footer-content-div"><!-- will be turned into a flex item -->
+
+        <h2>Contact</h2>
+        <ul>
+          <li>Contact Us</li>
+        </ul><!-- end of ul -->
+
+      </div><!-- end of div -->
+
+
+      <div id="other-footer-content" class="footer-content-div"><!-- will be turned into a flex item -->
+
+        <p>FOLLOW US ON SOCIAL MEDIA!</p>
+
+        <a href="#"> <img class="social-media-icon" src="Icons/facebook-icon.svg" alt="Facebook page"> </a>
+        <a href="#"> <img class="social-media-icon" src="Icons/twitter-icon.svg" alt="Twitter page"> </a>
+        <a href="#"> <img class="social-media-icon" src="Icons/instagram-icon.svg" alt="Instagram page"> </a>
+        <a href="#"> <img class="social-media-icon" src="Icons/youtube-icon.svg" alt="YouTube page"> </a>
+        <a href="#"> <img class="social-media-icon" src="Icons/pinterest-icon.svg" alt="Pinterest page"> </a>
+
+
+      </div><!-- end of div -->
+
+    </div><!-- end of footer flex parent -->
+
+    <p id="copyright-sentence">Copyright &#0169; 2019.</p>
+
+  </footer><!-- end of footer -->
+
+</body>
+</html>
